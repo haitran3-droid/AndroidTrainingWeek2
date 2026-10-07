@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="LearningCanvasView">
+        <attr name="circleColor" format="color" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="circleLabel" format="string" />
+        <attr name="showGrid" format="boolean" />
+    </declare-styleable>
+</resources>

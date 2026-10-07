@@ -1,0 +1,5 @@
+<resources>
+    <item name="accessibility_zoom_in" type="id" />
+    <item name="accessibility_zoom_out" type="id" />
+    <item name="accessibility_center" type="id" />
+</resources>

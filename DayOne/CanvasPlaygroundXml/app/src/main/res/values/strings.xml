@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Canvas Playground</string>
+    <string name="title">Canvas Playground</string>
+    <string name="subtitle">Chạm • kéo • pinch • thả nhãn</string>
+    <string name="instructions">Chạm vòng tròn để click. Kéo một ngón để di chuyển; đặt ngón đầu trong hình rồi thêm ngón thứ hai để pinch. Nhấn giữ nhãn và thả vào ô nét đứt, hoặc chạm nhãn để copy.</string>
+    <string name="canvas_description">Vòng tròn %1$s, kích thước %2$d phần trăm. Có thể dùng các nút di chuyển và phóng thu.</string>
+    <string name="canvas_stats">Scale %1$d%% · X %2$d%% · Y %3$d%% · Click %4$d</string>
+    <string name="label_intern">Intern</string>
+    <string name="label_android">Android</string>
+    <string name="source_heading">Chạm để copy · giữ để kéo nhãn</string>
+    <string name="drop_label">Thả nhãn ở đây · %1$s</string>
+    <string name="ready">Sẵn sàng khám phá</string>
+    <string name="circle_clicked">Đã chạm vào vòng tròn</string>
+    <string name="label_copied">Đã copy nhãn “%1$s”</string>
+    <string name="drag_started">Kéo vào ô nét đứt để copy nhãn</string>
+    <string name="drop_success">Copy thành công · nhãn nguồn còn nguyên</string>
+    <string name="drop_outside">Kết thúc kéo · chưa có vùng nhận hợp lệ</string>
+    <string name="zoom_in">Phóng to</string>
+    <string name="zoom_out">Thu nhỏ</string>
+    <string name="change_color">Đổi màu</string>
+    <string name="reset">Đặt lại</string>
+    <string name="move_left">Trái</string>
+    <string name="move_right">Phải</string>
+    <string name="move_up">Lên</string>
+    <string name="move_down">Xuống</string>
+    <string name="center_circle">Đưa vòng tròn về tâm</string>
+    <string name="enabled">Bật tương tác Canvas</string>
+    <string name="intercept_demo">Thử parent chặn thao tác kéo</string>
+    <string name="parent_intercepted">Parent đã lấy gesture · child nhận CANCEL</string>
+    <string name="intercept_on">Demo bật: kéo vòng tròn để quan sát CANCEL</string>
+    <string name="intercept_off">Demo tắt: Canvas nhận thao tác kéo bình thường</string>
+    <string name="wide_heading">Gợi ý thực hành</string>
+    <string name="wide_help">1. So sánh tap và kéo vượt slop.
+2. Pinch rồi nhấc ngón chính.
+3. Kéo “Android” vào ô nét đứt để đổi nhãn.
+4. Xoay máy và kiểm tra vị trí, scale.
+5. Bật demo parent và đọc Logcat.
+6. Dùng nút hoặc TalkBack để thao tác.</string>
+    <string name="layout_mode">Bố cục dọc</string>
+</resources>

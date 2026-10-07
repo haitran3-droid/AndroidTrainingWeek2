@@ -1,0 +1,17 @@
+<resources>
+    <color name="background">#0F172A</color>
+    <color name="surface">#1E293B</color>
+    <color name="text">#F8FAFC</color>
+    <color name="muted">#CBD5E1</color>
+    <color name="outline">#64748B</color>
+    <color name="grid">#334155</color>
+    <color name="circle_blue">#1D4ED8</color>
+    <color name="circle_purple">#6D28D9</color>
+    <color name="circle_red">#B91C1C</color>
+    <color name="action">#1E3A5F</color>
+    <color name="action_pressed">#284B75</color>
+    <color name="disabled">#334155</color>
+    <color name="disabled_text">#94A3B8</color>
+    <color name="drop_active">#1E3A5F</color>
+    <color name="ripple">#6093C5FD</color>
+</resources>

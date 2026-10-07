@@ -1,0 +1,17 @@
+<resources>
+    <color name="background">#F1F5F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text">#0F172A</color>
+    <color name="muted">#475569</color>
+    <color name="outline">#94A3B8</color>
+    <color name="grid">#E2E8F0</color>
+    <color name="circle_blue">#1D4ED8</color>
+    <color name="circle_purple">#6D28D9</color>
+    <color name="circle_red">#B91C1C</color>
+    <color name="action">#DBEAFE</color>
+    <color name="action_pressed">#BFDBFE</color>
+    <color name="disabled">#E2E8F0</color>
+    <color name="disabled_text">#64748B</color>
+    <color name="drop_active">#DBEAFE</color>
+    <color name="ripple">#402563EB</color>
+</resources>

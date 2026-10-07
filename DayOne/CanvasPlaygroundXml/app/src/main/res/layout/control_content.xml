@@ -1,0 +1,166 @@
+<com.example.canvasplayground.LessonColumn xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="12dp"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/tools_panel">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/source_heading"
+        android:textColor="@color/muted"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dragSource"
+            style="@style/LabelSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_intern" />
+
+        <TextView
+            android:id="@+id/dragSource2"
+            style="@style/LabelSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_android" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dropTarget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:accessibilityLiveRegion="polite"
+        android:gravity="center"
+        android:minHeight="56dp"
+        android:padding="12dp"
+        android:textColor="@color/text"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zoomOut"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zoom_out" />
+
+        <Button
+            android:id="@+id/zoomIn"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zoom_in" />
+
+        <Button
+            android:id="@+id/changeColor"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/change_color" />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/moveLeft"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/move_left" />
+
+        <Button
+            android:id="@+id/moveUp"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/move_up" />
+
+        <Button
+            android:id="@+id/moveDown"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/move_down" />
+
+        <Button
+            android:id="@+id/moveRight"
+            style="@style/ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/move_right" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/enableCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="@string/enabled"
+        android:textColor="@color/text"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/interceptDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/intercept_demo"
+        android:textColor="@color/text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite"
+        android:paddingTop="8dp"
+        android:textColor="@color/muted"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/instructions"
+        android:textColor="@color/muted"
+        android:textSize="14sp" />
+</com.example.canvasplayground.LessonColumn>
