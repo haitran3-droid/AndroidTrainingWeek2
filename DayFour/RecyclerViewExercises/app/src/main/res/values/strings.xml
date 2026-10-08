@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">RecyclerViewExercises</string>
+    <string name="image_desc">Avatar image</string>
+    <string name="label_student_list">Danh sách sinh viên</string>
+    <string name="btn_add_desc">Add new student button</string>
+    <string name="action_submit">Hoàn tất</string>
+    <string name="label_new_student">Thêm sinh viên mới</string>
+    <string name="hint_student_id">Mã sinh viên</string>
+    <string name="hint_full_name">Họ và tên</string>
+    <string name="hint_birth_date">Ngày sinh</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_gpa">Điểm trung bình tích lũy</string>
+    <string name="label_major">Chuyên ngành:</string>
+    <string name="rb_text_male">Nam</string>
+    <string name="rb_text_female">Nữ</string>
+    <string name="rb_text_other">Khác</string>
+    <string name="label_address">Địa chỉ:</string>
+    <string name="label_year">Sinh viên năm thứ:</string>
+    <string name="error_student_exist">Mã sinh viên này đã tồn tại</string>
+    <string name="empty_text" />
+    <string name="error_id_empty">Mã sinh viên không được để trống</string>
+    <string name="error_invalid_gpa">Điểm gpa chỉ nằm trong đoạn [0, 4.0]</string>
+    <string name="error_full_name_empty">Họ và tên không được để trống</string>
+    <string name="error_birth_date_empty">Ngày sinh không được để trống</string>
+    <string name="error_email_empty">Email không được để trống</string>
+    <string name="error_gpa_empty">Điểm gpa không được để trống</string>
+    <string name="error_invalid_email">Email không đúng định dạng</string>
+    <string name="action_cancel">Hủy bỏ</string>
+    <string name="add_student_success">Thêm sinh viên thành công!</string>
+    <string name="action_save">Lưu lại</string>
+    <string name="label_edit_student">Cập nhật thông tin sinh viên</string>
+    <string name="title_student_info">Thông tin sinh viên</string>
+    <string name="desc_img_avatar">Large avatar image</string>
+    <string name="action_edit">Cập nhật</string>
+    <string name="error_student_not_found">Không có dữ liệu về sinh viên này.</string>
+    <string name="text_id_detail">Mã sinh viên: %s</string>
+    <string name="text_full_name_detail">Họ và tên: %s</string>
+    <string name="text_birth_date_detail">Ngày sinh: %s</string>
+    <string name="text_address_detail">Địa chỉ: %s</string>
+    <string name="text_major_detail">Chuyên ngành: %s</string>
+    <string name="text_email_detail">Email: %s</string>
+    <string name="text_gender_detail">Giới tính: %s</string>
+    <string name="text_gpa_detail">Điểm TB tích lũy: %s</string>
+    <string name="text_year_detail">Sinh viên năm thứ: %d</string>
+    <string name="update_student_success">Cập nhật thông tin sinh viên thành công!</string>
+    <string name="title_edit_student">Cập nhật thông tin sinh viên</string>
+    <!-- mảng thể hiện sinh viên năm thứ k -->
+    <string-array name="year_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <!-- mảng thể hiện danh sách các tỉnh, thành phố -->
+    <string-array name="city_array">
+        <item>TP.Hà Nội</item>
+        <item>TP.Hồ Chí Minh</item>
+        <item>TP.Đà Nẵng</item>
+        <item>An Giang</item>
+        <item>Bắc Ninh</item>
+        <item>Cà Mau</item>
+        <item>Cao Bằng</item>
+        <item>TP.Cần Thơ</item>
+        <item>Đắk Lắk</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Tĩnh</item>
+        <item>TP.Hải Phòng</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Lai Châu</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Lâm Đồng</item>
+        <item>Nghệ An</item>
+        <item>Ninh Bình</item>
+        <item>Phú Thọ</item>
+        <item>Quảng Ngãi</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Sơn La</item>
+        <item>Tây Ninh</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>TP.Huế</item>
+        <item>Tuyên Quang</item>
+        <item>Vĩnh Long</item>
+    </string-array>
+
+    <!-- mảng thể hiện danh sách các chuyên ngành -->
+    <string-array name="major_array">
+        <item>CNTT</item>
+        <item>HTTT</item>
+        <item>ĐT-VT</item>
+        <item>QTKD</item>
+        <item>Cơ Khí</item>
+        <item>Tài Chính</item>
+        <item>Kế Toán</item>
+    </string-array>
+</resources>
