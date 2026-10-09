@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_search_student"
+        android:icon="@drawable/ic_search"
+        android:title="@string/title_search_student"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_sort_by_name"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/title_sort_by_name"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/menu_sort_by_id"
+        android:title="@string/title_sort_by_id"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_sort_by_gpa"
+        android:title="@string/title_sort_by_gpa"
+        app:showAsAction="ifRoom|withText" />
+</menu>

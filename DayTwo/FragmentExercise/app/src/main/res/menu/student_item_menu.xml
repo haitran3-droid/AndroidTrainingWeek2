@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_view_detail"
+        android:icon="@drawable/ic_details"
+        android:title="@string/title_view_detail"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/title_edit_info"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/title_delete_student"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>
