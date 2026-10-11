@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="24dp">
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        style="@style/Text.Aqua.Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/page_gutter" />
+
+    <com.example.aquadaily.ui.widgets.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/articles"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/page_gutter"
+            android:paddingEnd="12dp" />
+    </com.example.aquadaily.ui.widgets.NestedScrollableHost>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <color name="home_header">#2456A6</color>
+    <color name="primary">#8AB7FF</color>
+    <color name="primary_dark">#B6D1FF</color>
+    <color name="on_primary">#10294D</color>
+    <color name="background">#101C2D</color>
+    <color name="surface">#1B2C43</color>
+    <color name="report_date_background">#26384F</color>
+    <color name="text_primary">#F0F5FC</color>
+    <color name="text_secondary">#B5C6DC</color>
+    <color name="outline">#415977</color>
+    <color name="pale_blue">#263E5D</color>
+    <color name="wave_back">#80BEFA</color>
+    <color name="wave_front">#4B9AF1</color>
+    <color name="error">#FFB4AB</color>
+    <color name="pale_green">#314333</color>
+    <color name="pale_pink">#4A2F3F</color>
+    <color name="progress_track">#3C536F</color>
+</resources>

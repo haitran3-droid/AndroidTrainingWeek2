@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="page_gutter">64dp</dimen>
+    <dimen name="home_gutter">64dp</dimen>
+    <dimen name="article_width">192dp</dimen>
+    <dimen name="hero_ring">144dp</dimen>
+</resources>
