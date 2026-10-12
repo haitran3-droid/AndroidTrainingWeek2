@@ -32,9 +32,11 @@ AquaDaily giúp người dùng ghi lại từng lần uống nước, theo dõi 
 
 ### Video demo
 
-[Xem video demo AquaDaily](AquaDaily/docs/videos/aquadaily-demo.mp4)
+<img src="AquaDaily/docs/videos/aquadaily-demo.gif" alt="Demo AquaDaily: thêm nước, chỉnh mục tiêu và xem tiến độ" width="360">
 
-Video dài khoảng **43 giây**, không có âm thanh, quay trực tiếp luồng **thêm 250 ml → xem tiến độ → xem lịch sử → mở bài viết**.
+Demo dạng GIF tự chạy trực tiếp trong README. [Tải video MP4 đầy đủ](AquaDaily/docs/videos/aquadaily-demo.mp4?raw=true).
+
+Video dài khoảng **43 giây**, không có âm thanh, minh họa thao tác **thêm nước, chỉnh mục tiêu và theo dõi tiến độ cập nhật** trên thiết bị thật.
 
 ### Công nghệ
 

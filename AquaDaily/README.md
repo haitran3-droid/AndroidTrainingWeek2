@@ -23,14 +23,15 @@ Project thực hành phát triển Android với Kotlin, giao diện XML, kiến
 
 ## Video demo
 
-[Xem video demo AquaDaily](docs/videos/aquadaily-demo.mp4)
+<img src="docs/videos/aquadaily-demo.gif" alt="Demo AquaDaily: thêm nước, chỉnh mục tiêu và xem tiến độ" width="360">
+
+Demo dạng GIF tự chạy trực tiếp trong README. [Tải video MP4 đầy đủ](docs/videos/aquadaily-demo.mp4?raw=true).
 
 Video quay trực tiếp trên thiết bị, dài khoảng **43 giây**, không có âm thanh, giới thiệu luồng sử dụng:
 
-1. Mở **Home** và thêm một lần uống **250 ml**.
-2. Xem lượng nước đã uống, tiến độ và hiệu ứng sóng nước cập nhật.
-3. Chuyển sang **Report** để xem bản ghi vừa thêm.
-4. Mở **Infor** và xem nội dung một bài viết.
+1. Mở **Home** và ghi nhận lượng nước đã uống.
+2. Chỉnh mục tiêu uống nước trong ngày.
+3. Theo dõi tổng lượng nước, phần trăm hoàn thành và hiệu ứng sóng nước cập nhật.
 
 ## Tính năng
 
