@@ -7,6 +7,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.LinearInterpolator
@@ -28,6 +29,11 @@ import kotlin.math.sin
  */
 class WaveView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) :
     View(context, attrs) {
+    private companion object {
+        const val MIN_WATER_FRACTION = 0.05f
+        const val MAX_WATER_FRACTION = 0.95f
+    }
+
     private val backPath = Path()
     private val frontPath = Path()
     private val backPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
@@ -41,8 +47,8 @@ class WaveView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
         Paint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.WHITE; alpha = 155 }
 
     private var phase = 0f
-    private var fraction = 0f
-    private var targetFraction = 0f
+    private var fraction = MIN_WATER_FRACTION
+    private var targetFraction = MIN_WATER_FRACTION
     private var hasProgress = false
     private var levelAnimator: ValueAnimator? = null
     private var requested = false
@@ -57,13 +63,15 @@ class WaveView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
 
     /**
      * Cập nhật mực nước theo lượng nước đã uống và mục tiêu ngày.
+     * Mực nước hiển thị giới hạn từ 5% đến 95% để luôn thấy bề mặt sóng.
      *
      * @param totalMl Tổng ml đã uống.
      * @param goalMl Mục tiêu ml cần đạt.
      */
     fun setProgress(totalMl: Long, goalMl: Int) {
-        val next =
+        val progress =
             if (goalMl > 0) (totalMl.toDouble() / goalMl).coerceIn(0.0, 1.0).toFloat() else 0f
+        val next = progress.coerceIn(MIN_WATER_FRACTION, MAX_WATER_FRACTION)
         if (hasProgress && next == targetFraction) return
         levelAnimator?.cancel()
         targetFraction = next
@@ -143,8 +151,8 @@ class WaveView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
         val right = (width - paddingRight).toFloat()
         val bottom = (height - paddingBottom).toFloat()
         val contentHeight = bottom - paddingTop
-        val amplitude = minOf(12f * resources.displayMetrics.density, contentHeight * 0.035f) *
-                minOf(1f, fraction / 0.1f) * (1f - fraction)
+        // Giữ biên độ ổn định và nhỏ hơn khoảng trống 5% ở hai mép thẻ.
+        val amplitude = minOf(12f * resources.displayMetrics.density, contentHeight * 0.035f)
         path.moveTo(left, bottom)
         for (i in 0..40) {
             val x = left + (right - left) * i / 40f
@@ -158,7 +166,6 @@ class WaveView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        if (fraction <= 0f) return
         val checkpoint = canvas.save()
         canvas.clipRect(paddingLeft, paddingTop, width - paddingRight, height - paddingBottom)
 

@@ -51,7 +51,8 @@ abstract class ActionViewModel : ViewModel() {
         operation.update { it.copy(busy = true, error = false) }
         viewModelScope.launch {
             try {
-                writeLock.withLock { action() }; operation.update { it.copy(error = false) }
+                writeLock.withLock { action() }
+                operation.update { it.copy(error = false) }
             } catch (cancel: CancellationException) {
                 throw cancel
             } catch (error: SQLiteException) {

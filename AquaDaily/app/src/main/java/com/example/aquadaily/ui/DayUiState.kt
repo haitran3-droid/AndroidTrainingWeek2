@@ -6,8 +6,6 @@ import com.example.aquadaily.domain.HydrationMath
 /**
  * Trạng thái giao diện (UI State) đại diện cho toàn bộ thông tin hiển thị của một ngày.
  *
- * Tuân theo kiến trúc MVI / UDF (Unidirectional Data Flow), gom mọi thuộc tính UI vào một state bất biến (immutable).
- *
  * @property dayEpoch Ngày đang xét (dạng epoch day).
  * @property goalMl Mục tiêu lượng nước trong ngày (ml).
  * @property entries Danh sách các bản ghi uống nước trong ngày.
