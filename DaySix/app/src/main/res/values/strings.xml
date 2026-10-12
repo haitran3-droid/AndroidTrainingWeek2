@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="hint_fullname">Enter your fullname</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="text_user_information">User Information</string>
+    <string name="text_add">Add</string>
+    <string name="img_des">avatar of user</string>
+    <string name="message_success">Add new user to database success!</string>
+    <string name="message_failed">Add user failed. This email is being used!</string>
+    <string name="text_btn_des">Add new user</string>
+    <string name="text_btn_more_desc">More options</string>
+    <string name="des_option">Option menu</string>
+    <string name="menu_update">Update</string>
+    <string name="menu_delete">Delete</string>
+    <string name="hint_name">Full name</string>
+    <string name="text_user_info">User Information</string>
+    <string name="message_update_success">Update user information success!</string>
+    <string name="message_update_failed">Update user information failed!</string>
+
+    <string name="text_btn_cancel">Cancel</string>
+    <string name="menu_edit">Edit</string>
+    <string name="text_confirm_delete">Do you want to delete this user?</string>
+    <string name="text_confirm">Confirm</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_btn_update">Update</string>
+    <string name="text_menu_item_detail">Detail</string>
+    <string name="text_label_name">Full Name:</string>
+    <string name="text_label_email">Email:</string>
+    <string name="btn_ok">OK</string>
+    <string name="text_confirm_update">Do you confirm to update?</string>
+    <string name="message_delete_success">User was deleted!</string>
+    <string name="message_delete_failed">Delete user failed!</string>
+    <string name="action_search_user">Search user</string>
+    <string name="hint_query">Search user</string>
+    <string name="search_result">Found %d user(s)!</string>
+    <string name="search_no_result">No result is found!</string>
+</resources>
