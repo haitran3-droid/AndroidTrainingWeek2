@@ -46,18 +46,21 @@ class WaveView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
     private val bubblePaint =
         Paint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.WHITE; alpha = 155 }
 
-    private var phase = 0f
-    private var fraction = MIN_WATER_FRACTION
-    private var targetFraction = MIN_WATER_FRACTION
-    private var hasProgress = false
-    private var levelAnimator: ValueAnimator? = null
-    private var requested = false
+    private var phase = 0f // góc đưa vào hàm sin, thay đổi để sóng chuyển động
+    private var fraction = MIN_WATER_FRACTION // mực nước đang được vẽ tại thời điểm hiện tại
+    private var targetFraction = MIN_WATER_FRACTION // mực nước mà view cần đạt tới
+    private var hasProgress = false // đã nhận dữ liệu tiến độ ít nhất 1 lần chưa
+    private var levelAnimator: ValueAnimator? = null // animation dâng/hạ mực nước
+    private var requested = false // fragment có yêu cầu chạy animation hay không
+    /**
+     * ex:  targetFraction = 0.50
+            fraction       = 0.25 → 0.30 → 0.40 → 0.50*/
 
     /** Animator tạo chu kỳ sóng dao động tuần hoàn. */
     private val animator = ValueAnimator.ofFloat(0f, (2 * PI).toFloat()).apply {
-        duration = 4200
-        repeatCount = ValueAnimator.INFINITE
-        interpolator = LinearInterpolator()
+        duration = 4200 // chu kì kéo dài 4.2s
+        repeatCount = ValueAnimator.INFINITE //lặp liên tục
+        interpolator = LinearInterpolator() // giá trị thay đổi với tốc độ đều
         addUpdateListener { phase = it.animatedValue as Float; invalidate() }
     }
 
@@ -89,7 +92,7 @@ class WaveView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
         hasProgress = true
     }
 
-    /** Bật hoặc tắt hoạt ảnh sóng nước (thường bật khi Fragment hiển thị trên màn hình). */
+    /** Bật hoặc tắt hoạt ảnh sóng nước. HomeFragment gọi true trong onResume() và false trong onPause(). */
     fun setAnimating(enabled: Boolean) {
         requested = enabled
         updateAnimation()
